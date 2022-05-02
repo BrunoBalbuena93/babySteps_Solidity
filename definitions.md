@@ -1,0 +1,21 @@
+# Some important Definitions
+- **Blockchain:**
+- **Decentralized:** No central source that controls the system
+- **Inmmutability:** Data cannot be edited
+- **Pseaudoanonymus:**
+- **Smart Contract:** Set of instructions which are executed automatically (algorithms)
+- **Oracles:** Data provider for blockchains to inject external data
+- **Hybrid Smart Contract:** Smart contracts wich require external data via oracles
+- **DApp:**
+- **DAO:** Descentralized Autonomus Assosiations
+- **Testnet:** Net where you can test your code
+- **Gas:** Measure of the computational use for a transaction to ocur
+- **Gwei:** Measurement of a certain token (like satoshis in BTC) used to calculate the gas price (1 Gwei = 1x10^-9 ETH) 
+- **Gas Price:** Amount of `tokens` needed to execute a transaction
+- **Gas Limit:** Amount of gas that the transaction should be allowed to pay
+- **Hash:** Unique fixed length string to identify a piece of data (transaction)
+- **Nonce:** The solution number to meet the requirements of the hashing difficulty in the blockchain
+- **PoW:** Proof of Work mining algorithm
+- **PoS:** Proof of Stake mining algorithm
+- **Consensus:** Mechanism used to agree on the state of a blockchain
+- **Nakamoto Consensus:** *The blockchain follows the longest chain*
