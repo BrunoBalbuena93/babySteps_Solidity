@@ -53,3 +53,4 @@ La función tiene *memory* previo al nombre del argumento tipo string, esto es p
 
 Una vez llamada la función, se ejecuta una adición a este array con el push, instanciando un objeto de People dentro del argumento y posteriormente se genera una entrada en el mapping. Notese que el `mapping` usa corchetes mientras que `push` y `People` utilizan paréntesis. 
 
+### [StorageFactory](/simple_storage/StorageFactory.sol)
