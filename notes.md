@@ -1,5 +1,5 @@
 # Solidity Course
-[2:26:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
+[3:45:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
 
 
 ### Getting funds in rinkeby:

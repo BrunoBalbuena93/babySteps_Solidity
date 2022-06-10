@@ -20,6 +20,11 @@
 3. **memory:** When you are passing a variable, you can decide wether to store it in memory (just for the sake of the method running)
 4. **storage:** Or in the storage, so it can be accessed in another moment
 5. **contract**: Palabra reservada para definir un contrato. Podría interpretarse como un `class`
+6. **payable**: Palabra reservada para denotar una función que se utiliza para pagar.
+7. **msg**: Indicador del mensaje, de aqui se puede obtener quien está enviando la transacción `msg.sender` o bien, cuanto está mandando `msg.value`
+8. **using [library] for [var_type]**: Genera una directiva de una librería apuntando hacia un tipo de dato
+9. **require**: Condicional. Similar a _if else_, pero en caso de no cumplirse, termina la ejecución
+
 ### Visibility
 1. **public:** Cualquier contrato o función puede llamarla.
 2. **external:** Solo puede ser llamada por contratos externos a este
@@ -28,7 +33,7 @@
 > Cuando no es declarada, por default lo setea como `internal`
 
 ## Definiendo contratos
-[Contrato Ejemplo](/simple_storage/simpleStorage.sol)
+[Contrato Ejemplo](/solidity_core/simpleStorage.sol)
 1. Definir la versión de Solidity con la que trabajarás, que sea mayor o igual a la indicada (1)
 2. Definición del contrato, muy similar a definir una clase (3)
 3. Definición de elementos primitivos (4-9)
@@ -37,3 +42,9 @@
 function store(uint256 _inputValue) public {}
 ```
 5. 
+
+### Middlewares
+Existe una función "similar" a un middleware que son los `modifiers`. Son como funciones que se ejecutan previas a la función en sí, en la función [withdraw](/solidity_core/FundMe.sol) se puede ver como primero pasa por dicha función y después ejecuta el código de la función.
+
+### Constructores
+Como era de esperarse, Solidity también tiene constructores bajo la palabra reservada `constructor`.
