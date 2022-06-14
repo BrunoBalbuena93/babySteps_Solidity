@@ -1,5 +1,5 @@
 # Solidity Course
-[3:45:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
+[4:02:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
 
 
 ### Getting funds in rinkeby:
@@ -29,7 +29,8 @@ Ethereum 2.0 is proposing to move from a *PoW* to a *PoS* blockchain, to do so i
 
 Enter to this link & start coding! Remember that Solidity needs to run on a Javascript VM (at least to do a few tests) or a Testnet
 
-
+## Using Python
+Since python is not the natural language to develop smart contracts, it uses some artifacts & tricks to develop and deploy. As an example, you can go to the [demo notes 101](/demos/web3_py_simple_storage/notes.md) to understand the workflow.
 
 
 ## URLS
