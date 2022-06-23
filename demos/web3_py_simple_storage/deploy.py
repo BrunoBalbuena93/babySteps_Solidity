@@ -44,3 +44,5 @@ nonce = web3.eth.getTransactionCount(public_key_address)
 transaction = simpleStorage.constructor().buildTransaction({'chainId': chain_id, 'from': public_key_address, 'nonce': nonce})
 # 2. Sign transaction
 signed_tx = web3.eth.account.sign_transaction(transaction, private_key_address)
+# 3. Send transaction
+tx_hash = web3.eth.send_raw_transaction(signed_tx.rawTransaction)
