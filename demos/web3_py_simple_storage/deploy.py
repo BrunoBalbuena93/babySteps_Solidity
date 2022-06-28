@@ -31,7 +31,6 @@ abi = compiled_sol.get('contracts').get('SimpleStorage.sol').get('SimpleStorage'
 
 # Blockchain related data
 chain_address = Web3.HTTPProvider(getenv('RPC_SERVER'))
-chain_id = getenv('NETWORK_ID')
 public_key_address = getenv('PUBLIC_ADDRESS')
 private_key_address = getenv('PRIVATE_ADDRESS')
 # Conecting to web3
@@ -41,7 +40,7 @@ simpleStorage = web3.eth.contract(abi=abi, bytecode=bytecode)
 # 0. Getting last transaction
 nonce = web3.eth.getTransactionCount(public_key_address)
 # 1. Build the transaction
-transaction = simpleStorage.constructor().buildTransaction({'chainId': chain_id, 'from': public_key_address, 'nonce': nonce})
+transaction = simpleStorage.constructor().buildTransaction({'chainId': web3.eth.chain_id, 'from': public_key_address, 'nonce': nonce, 'maxFeePerGas': 2000000000, 'maxPriorityFeePerGas': 1000000000})
 # 2. Sign transaction
 signed_tx = web3.eth.account.sign_transaction(transaction, private_key_address)
 # 3. Send transaction
