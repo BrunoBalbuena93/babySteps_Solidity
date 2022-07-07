@@ -1,5 +1,5 @@
 # Solidity Course
-[4:08:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
+[4:30:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
 
 
 ### Getting funds in rinkeby:
@@ -39,3 +39,4 @@ Since python is not the natural language to develop smart contracts, it uses som
 - ETH Units converter: https://eth-converter.com/
 - Blockchain simulator: https://andersbrownworth.com/blockchain
 - Solidity Editor: https://remix.ethereum.org/
+- Infura: https://infura.io/

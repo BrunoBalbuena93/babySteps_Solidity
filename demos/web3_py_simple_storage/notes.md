@@ -33,3 +33,8 @@ compiled_sol = compile_standard({
 ```
 As it is shown, the version of Solidity is specified as the sources, output settings and configurations of the bytecode and abi, these data is regarding the contract to deploy, whereas HTTP/RCP is the blockchain where it will be deployed using the Web3 module
 
+> When we are interacting with smart contracts, we need it's address in the blockchain & the abi
+
+There are 2 kinds of interactions with the contracts (as you should have seen in REMIX)
+1. **Call**: Functions which "read" the data stored but do not write.
+2. **Transact**: Functions which write data into the database
