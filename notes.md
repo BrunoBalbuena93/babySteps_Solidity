@@ -1,5 +1,5 @@
 # Solidity Course
-[4:30:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
+[5:06:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
 
 
 ### Getting funds in rinkeby:
@@ -32,6 +32,27 @@ Enter to this link & start coding! Remember that Solidity needs to run on a Java
 ## Using Python
 Since python is not the natural language to develop smart contracts, it uses some artifacts & tricks to develop and deploy. As an example, you can go to the [demo notes 101](/demos/web3_py_simple_storage/notes.md) to understand the workflow.
 
+
+## Brownie
+To install brownie, it is required to install `pipx`
+
+The commands are:
+```
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+```
+It didn't work for me so I had to run it the first one, but with any of these should work:
+```
+pipx install eth-brownie
+python3 -m pipx install eth-brownie
+```
+
+- **Build**: Tracks interfaces, deployments, chances and compiled code from smart contracts
+- **Contracts**: Here is where it will try to find the contract files (*.sol), whenever you want to deploy it, it should be there
+- **Interfaces**:
+- **Reports**:
+- **Scripts**: Automation and pipelines
+- **Tests**: Create tests for QA purposes
 
 ## URLS
 - Rinkeby ETH requester: https://faucet.rinkeby.io/

@@ -48,3 +48,14 @@ Existe una función "similar" a un middleware que son los `modifiers`. Son como 
 
 ### Constructores
 Como era de esperarse, Solidity también tiene constructores bajo la palabra reservada `constructor`.
+
+
+### Brownie cli
+- **brownie init**: Start a brownie project
+- **brownie compile**: Compiles the solidity contract and creates the respective data (abi and stuff like that)
+- **brownie run**: Run a python script, it can have *--network* flag to indicate where does it live.
+- **brownie console**: Open a console with everything around brownie already imported
+- **brownie accounts**
+    - **new <name or alias>**: Create/Store a new private key. It will ask for a password
+    - **list**: List of addresses saved within 
+    - **delete <name or alias>**: Delete a stored private key
