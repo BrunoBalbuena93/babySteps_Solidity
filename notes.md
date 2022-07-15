@@ -1,5 +1,5 @@
 # Solidity Course
-[5:06:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
+[5:38:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
 
 
 ### Getting funds in rinkeby:
@@ -53,6 +53,15 @@ python3 -m pipx install eth-brownie
 - **Reports**:
 - **Scripts**: Automation and pipelines
 - **Tests**: Create tests for QA purposes
+
+If working with brownie and planning to use oracles, it is needed to do either a **fork** so it "thinks" it is communicating with other blockchain or **mock**
+
+#### Mocking
+With mocking, you are going to deploy a contract prior to the one you are working with, which will do the job as the external oracle. You could find the code for this in the chainlink [repo](https://github.com/smartcontractkit/chainlink-mix/tree/main/contracts/test)
+
+## Verifying the smart contract
+When we are deploying a smart contract, we can set it public and "ask" for the network to verify it. This example is shown in fund me [deploy script](/brownie/fund_me/scripts/deploy.py) 
+
 
 ## URLS
 - Rinkeby ETH requester: https://faucet.rinkeby.io/
