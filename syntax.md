@@ -59,3 +59,6 @@ Como era de esperarse, Solidity también tiene constructores bajo la palabra res
     - **new <name or alias>**: Create/Store a new private key. It will ask for a password
     - **list**: List of addresses saved within 
     - **delete <name or alias>**: Delete a stored private key
+- **brownie networks**
+    - **list**: List of all the networks available    
+    - **add**: Add a custom network to brownie. It requires type (like Ethereum, development or so), host and chainid

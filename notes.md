@@ -1,5 +1,5 @@
 # Solidity Course
-[5:38:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
+[6:01:00](https://www.youtube.com/watch?v=M576WGiDBdQ&t=4s)
 
 
 ### Getting funds in rinkeby:
@@ -63,6 +63,10 @@ With mocking, you are going to deploy a contract prior to the one you are workin
 When we are deploying a smart contract, we can set it public and "ask" for the network to verify it. This example is shown in fund me [deploy script](/brownie/fund_me/scripts/deploy.py) 
 
 
+## Forking
+As you may already know, forking is taking a copy of an existing blockchain and using it for your own purposes. Within the course it is used as `mainnet-fork-dev` and its run locally
+
+
 ## URLS
 - Rinkeby ETH requester: https://faucet.rinkeby.io/
 - ETH gas price: https://ethgasstation.info/
@@ -70,3 +74,4 @@ When we are deploying a smart contract, we can set it public and "ask" for the n
 - Blockchain simulator: https://andersbrownworth.com/blockchain
 - Solidity Editor: https://remix.ethereum.org/
 - Infura: https://infura.io/
+- 
