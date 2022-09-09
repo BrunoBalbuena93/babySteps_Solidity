@@ -28,7 +28,7 @@ To wrap things up we are going to create a fork of Ethereum mainnet and add it a
 1. To start, we need to add a network as a development type, let's name it `mainnet-fork-dev`
 2. It requires a command, a host and a place to take the fork from (here we are going to use a new application, not precisely Infura)
 3. It needs some accounts to be setup and these accounts need a mnemonic phrase
-4. 
+4. Add where should it take the fork from (in here I'm using an alchemy endpoint)
 ```
-brownie networks add development mainnet-fork-dev cmd=ganache-fork host=http://127.0.0.1 accounts=10 mnemonic=brownie port=8545 fork=https://eth-mainnet.g.alchemy.com/v2/Q4yR22Kl2OKmRZNa4m0Io5EUOmA1mm7w
+brownie networks add development mainnet-fork-dev cmd=ganache-fork host=http://127.0.0.1 accounts=10 mnemonic=brownie port=8545 fork=$YOUR_OWN_ADDRESS
 ```
